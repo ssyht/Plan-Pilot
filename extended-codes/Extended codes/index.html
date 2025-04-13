@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multilingual Gemini Budget Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Multilingual Gemini Budget Assistant</h1>
+    <p>Ask budget questions in any language (e.g., Hindi, Tamil, Telugu…)</p>
+
+    <textarea id="prompt" placeholder="e.g. ₹25,000 कमाने वाले छात्र के लिए बजट योजना क्या होनी चाहिए?" rows="4"></textarea>
+    <button onclick="generateResponse()">Generate Budget Plan</button>
+
+    <div class="upload-section">
+      <label for="csvUpload">📁 Upload your budget CSV</label>
+      <input type="file" id="csvUpload" accept=".csv" onchange="parseCSV(event)" />
+    </div>
+
+    <div id="response-box" class="response-box"></div>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

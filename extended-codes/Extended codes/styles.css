@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #2563eb;
+}
+button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.upload-section {
+  margin: 1.5rem 0;
+}
+.response-box {
+  margin-top: 1.5rem;
+  text-align: left;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
